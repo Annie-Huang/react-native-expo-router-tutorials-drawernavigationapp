@@ -7,12 +7,18 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer>
-        <Drawer.Screen name='index' options={{ title: 'Home title' }} />
+        <Drawer.Screen
+          name='index'
+          options={{ title: 'Home title', drawerLabel: 'Home label' }}
+        />
         <Drawer.Screen
           name='dashboard'
-          options={{ title: 'Dashboard title' }}
+          options={{ title: 'Dashboard title', drawerLabel: 'Dashboard label' }}
         />
-        <Drawer.Screen name='settings' options={{ title: 'Settings title' }} />
+        <Drawer.Screen
+          name='settings'
+          options={{ title: 'Settings title', drawerLabel: 'Settings label' }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );
