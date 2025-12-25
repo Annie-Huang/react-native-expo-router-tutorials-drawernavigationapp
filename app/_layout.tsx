@@ -7,7 +7,19 @@ export default function RootLayout() {
   // Pretty much like Gmail
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Drawer>
+      <Drawer
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: '#ffffff',
+          },
+          headerTintColor: '#8b5cf6',
+          drawerStyle: {
+            backgroundColor: '#ffffff',
+          },
+          drawerActiveTintColor: '#8b5cf6',
+          drawerInactiveTintColor: '#64748b',
+        }}
+      >
         <Drawer.Screen
           name='index'
           options={{
