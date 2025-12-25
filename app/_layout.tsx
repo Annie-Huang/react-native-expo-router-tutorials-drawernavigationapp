@@ -6,7 +6,11 @@ export default function RootLayout() {
   // Pretty much like Gmail
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Drawer />
+      <Drawer>
+        <Drawer.Screen name='index' />
+        <Drawer.Screen name='dashboard' />
+        <Drawer.Screen name='settings' />
+      </Drawer>
     </GestureHandlerRootView>
   );
 }
